@@ -70,7 +70,6 @@ class Main():
             elif self._butia.get_butia().getGray(5) > 14000 and self._butia.get_butia().getGray(2) < 40000:
                     self._butia.get_butia().set2MotorSpeed(0, 600, 1, 600)
             if self._nxt.get_nxt().get_port(1).getSample() < 20:
-                print "Accionar pala"
                 if True:
                     if self.veces < 3:
                         self.moverMotores()
