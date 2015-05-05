@@ -5,7 +5,8 @@ from time import sleep
 
 
 class Timer():
-    def __init__(self, time):
+    def __init__(self, main, time):
+        self._main = main
         self._time = time
         self._value = False
         thread.start_new_thread(self.start, ())
@@ -13,6 +14,4 @@ class Timer():
     def start(self):
         sleep(self._time)
         self._value = True
-
-    def get_value(self):
-        return self._value
+        self._main.set_ready()
