@@ -95,6 +95,8 @@ class Main():
             self._butia.get_butia().set2MotorSpeed(0, 0, 0, 0)
 
     def accionar_mecanismo(self):
+        # -- Secuencia que realiza la pala
+        # -- Ajustar valores de rotacion para alcanzar la medida exacta
         self._ready = False
         self._butia.get_butia().set2MotorSpeed(0, 0, 0, 0)
         self._nxt.get_nxt().get_port("a").turn(-20, 160)
