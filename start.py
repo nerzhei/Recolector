@@ -13,7 +13,7 @@ class Main2():
         self.distancia = None
         self.nxt = get_nxt()
         get_nxt().MotorA.turn(20, 20)
-        print get_nxt().Distance.get_sample()
+        printa get_nxt().Distance.get_sample()
 
     def moverMotores(self):
         self.funcionando = False
