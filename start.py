@@ -12,8 +12,10 @@ class Main2():
     def conectarNXT(self):
         self.distancia = None
         self.nxt = get_nxt()
+        self.nxt = get_nxt()
+        self.nxt = get_nxt()
         get_nxt().MotorA.turn(20, 20)
-        printa get_nxt().Distance.get_sample()
+        print get_nxt().Distance.get_sample()
 
     def moverMotores(self):
         self.funcionando = False
